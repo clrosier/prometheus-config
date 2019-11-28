@@ -31,4 +31,4 @@ scrape_configs:
   - job_name: 'node_exporter'
     scrape_interval: 5s
     static_configs:
-      - targets: ['35.182.4.2:9100']
+      - targets: ['www.cameronrosier.com:9100']
