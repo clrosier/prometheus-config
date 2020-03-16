@@ -28,7 +28,8 @@ scrape_configs:
     static_configs:
     - targets: ['localhost:9090']
 
-  - job_name: 'node_exporter'
-    scrape_interval: 5s
+  - job_name: 'jenkins'
+    scrape_interval: 30s
+    metrics_path: '/prometheus'
     static_configs:
-      - targets: ['www.cameronrosier.com:9100']
+      - targets: ['cameronrosier.com:8080']
